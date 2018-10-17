@@ -15,7 +15,8 @@
 		"image-size": "^0.6.3",
 		"jquery": "^3.3.1",
 		"jsdom": "^11.12.0",
-		"jszip": "^3.1.5"
+		"jszip": "^3.1.5",
+		"svg-to-png": "^3.1.2"
 	},
 	"devDependencies": {
 		"gulp": "^3.9.1",
@@ -32,7 +33,8 @@
 		"image-size": false,
 		"jsdom": false,
 		"os": false,
-		"path": false
+		"path": false,
+		"svg-to-png": false
 	},
 	"directories": {
 		"example": "examples",
