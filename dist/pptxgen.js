@@ -2110,6 +2110,7 @@ var PptxGenJS = function(){
 		// TODO: // FIXME: // CURRENT:
 		// require(svg-to-png)
 		// https://www.npmjs.com/package/svg-to-png
+		// @see: https://github.com/filamentgroup/svg-to-png
 	}
 
 	function callbackImgToDataURLDone(base64Data, slideRel) {
