@@ -3836,8 +3836,13 @@ var PptxGenJS = function(){
 				// Add paragraphProperties right after <p> before textrun(s) begin
 				strSlideXml += '<a:p>' + paragraphPropXml;
 			}
-			else if ( idx > 0 && (typeof textObj.options.bullet !== 'undefined' ||
-                (typeof textObj.options.align !== 'undefined' && prevTextObj.options.align !== textObj.options.align) )) {
+			else if (
+				idx > 0 && (
+					typeof textObj.options.bullet !== 'undefined' ||
+                	(typeof textObj.options.align !== 'undefined' && prevTextObj.options.align !== textObj.options.align)
+				)
+			)
+			{
 				strSlideXml += '</a:p><a:p>' + paragraphPropXml;
 			}
 
