@@ -1,4 +1,4 @@
-/* PptxGenJS 3.2.0-beta @ 2020-02-07T05:44:45.460Z */
+/* PptxGenJS 3.2.0-beta @ 2020-02-11T09:10:00.752Z */
 'use strict';
 
 var JSZip = require('jszip');
@@ -2184,6 +2184,7 @@ function genXmlTextRunProperties(opts, isDefault) {
         else if (opts.hyperlink.url) {
             // TODO: (20170410): FUTURE-FEATURE: color (link is always blue in Keynote and PPT online, so usual text run above isnt honored for links..?)
             //runProps += '<a:uFill>'+ genXmlColorSelection('0000FF') +'</a:uFill>'; // Breaks PPT2010! (Issue#74)
+            runProps += '<a:solidFill><a:srgbClr val="FF0000" /></a:solidFill>';
             runProps +=
                 '<a:hlinkClick r:id="rId' +
                     opts.hyperlink.rId +
